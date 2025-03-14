@@ -1,0 +1,590 @@
+/* CSS RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/* UTILS */
+
+.debug {
+    min-height: 50px;
+    padding: 5px;
+    background-color: #ff000022;
+    border: 2px dashed red;
+}
+
+.container {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+[class*='col'] {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.col-1-1 {
+    width: 100%;
+}
+
+.col-1-2 {
+    width: calc(100% / 2);
+}
+
+.col-1-3 {
+    width: calc(100% / 3);
+}
+
+.col-1-4 {
+    width: calc(100% / 4);
+}
+
+.col-1-5 {
+    width: calc(100% / 5);
+}
+
+.col-2-3 {
+    width: calc(100% * 2 / 3);
+}
+
+.col-1-6 {
+    width: calc(100% /6);
+}
+
+.col-2-6 {
+    width: calc(100% * 2 / 6);
+}
+
+.col-60 {
+    width: 60%;
+}
+
+.col-40 {
+    width: 40%;
+}
+
+.btn {
+    all: unset;
+    cursor: pointer;
+    background-color: #0063FF;
+    color: white;
+    font-size: 0.8rem;
+    padding: 8px 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.gray {
+    color: gray;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background-color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 4px 0px #000000;
+    z-index: 10;
+}
+
+header img {
+    text-align: center;
+    width: 70%;
+}
+
+header :nth-last-child(1) * {
+    margin-left: 20px;
+}
+
+.logo-container,
+.link-left,
+.link-right,
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.link-left,
+.link-right {
+    font-size: 0.8rem;
+}
+
+
+/* Main */
+
+.sfondo {
+    background-color: #ADD1E8;
+}
+
+main h1 {
+    font-size: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+main .col-1-3 * {
+    margin-bottom: 20px;
+}
+
+.freccia-giu {
+    font-size: 2rem;
+    margin-top: 120px;
+    position: relative;
+    bottom: 20px;
+}
+
+.container.top {
+    position: relative;
+    bottom: -60px;
+
+}
+
+/* second section */
+
+.rigagrigia {
+    height: 1px;
+    border-bottom: .5px solid lightgray;
+    position: relative;
+    top: 80px;
+    padding: 20px 0;
+}
+
+.trovail {
+    font-size: 2rem;
+    margin-top: 90px;
+}
+
+.cerchio {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    display: inline-block;
+}
+
+label {
+    padding-right: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked+.cerchio {
+    border: 4px solid blue;
+}
+
+.cerchio.bianco {
+    border: 2px solid lightgray;
+}
+
+.fatt-mens {
+    margin-right: 20px;
+}
+
+.container.small {
+    max-width: 1000px;
+    margin-bottom: 60px;
+}
+
+.singolo {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.row.piani {
+    justify-content: space-between;
+}
+
+.row.piani>* {
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    height: 850px;
+    margin-top: 50px;
+}
+
+.row.piani h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.row.piani p {
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+
+}
+
+ul {
+    padding-top: 30px;
+}
+
+ul * {
+    font-size: 0.8rem;
+    padding-bottom: 20px;
+}
+
+.flex {
+    padding: 20px;
+}
+
+.row.piani .btn {
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.oppure {
+    font-size: 0.9rem;
+    padding-bottom: 40px;
+}
+
+.smallriga {
+    height: 1px;
+    border-top: 1px solid lightgray;
+    width: 50px;
+    padding-bottom: 40px;
+}
+
+.blu {
+    color: #0063FF;
+}
+
+/* Team */
+
+.col-1-1.team {
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 8px;
+}
+
+.row.enterprice {
+    border: 1px solid lightgray;
+    position: relative;
+}
+
+.btn.vendite {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+}
+
+.enterprice.bottom * {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-bottom: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.team-icon {
+    padding: 10px 0;
+}
+
+.enterprice h5 {
+    padding-bottom: 40px;
+}
+
+.partner {
+    width: 600px;
+}
+
+.nopad {
+    padding: 0;
+}
+
+.partepartner p {
+    font-size: 0.8rem;
+}
+
+.partepartner {
+    padding-top: 50px;
+}
+
+.btn.bianco {
+    border: 1px solid gray;
+    color: gray;
+    background-color: white;
+}
+
+.w-310 {
+    width: 310px;
+}
+
+.otto-rem {
+    font-size: 0.8rem;
+
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.pad {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.logo-clients {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 60%;
+}
+
+.logo-clients-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+
+}
+
+.container-bonus {
+    margin-top: 60px;
+    display: flex;
+}
+
+.container-bonus section {
+    flex-basis: calc(100% / 3);
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.container-bonus section.quattro div {
+    flex-basis: 50%;
+    aspect-ratio: 1 / 1;
+    position: relative;
+}
+
+div.logo-client img {
+    width: 60%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+}
+
+div.designit {
+    border: 6px solid #D0E9CD;
+    background-color: #94D595;
+    /* border: 8px solid #CBEACA; */
+}
+
+div.asu {
+    background-color: #6B002B;
+}
+
+div.wbr {
+    background-color: #E90007;
+}
+
+div.hearts {
+    background-color: #ADD1EA;
+}
+
+div.uof {
+    background-color: #0096D4;
+}
+
+div.topps {
+    background-color: #FF0000;
+}
+
+div.lonely {
+    background-color: #032586;
+}
+
+div.clear {
+    background-color: #FFD600;
+}
+
+section.clients-centrale {
+    background-color: #F5F5F5;
+    position: relative;
+}
+
+section.clients-centrale img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 45%;
+
+}
+
+section.clients-centrale .smallriga {
+    border-color: #D5D5D7;
+    position: absolute;
+    width: 100px;
+    left: 20px;
+    top: 122px;
+}
+
+section.clients-centrale p {
+    position: absolute;
+    font-size: 0.7rem;
+}
+
+section.clients-centrale p.cit {
+    padding: 50px 20px;
+    top: 100px;
+}
+
+section.clients-centrale p.autore {
+    padding: 50px 20px;
+    top: 190px;
+}
+
+
+.row.mar-50 {
+    margin-top: 90px;
+}
+
+.row .col-60 .portadropbox {
+    font-size: 2rem;
+}
+
+.container.small.nomarginbottom {
+    margin-bottom: 0;
+}
+
+.paddingtop {
+    padding-top: 90px;
+}
+
+.col-40 .btn.bianco {
+    border-color: white;
+    color: black;
+}
+
+.container.paddingtop {
+    margin-bottom: 0;
+    padding-bottom: 90px;
+    background-color: #ADD1EA;
+}
+
+.bgc {
+    background-color: #ADD1EA;
+}
+
+div.relative {
+    position: relative;
+}
+
+div.relative button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.col-60 h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #6B002B;
+}
+
+.designitbig {
+    position: relative;
+}
+
+.designitbig p {
+    position: absolute;
+}
+
+p.morten {
+    top: 210px;
+}
+
+.container100 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+/* Footer */
+
+footer {
+    background-color: #000000;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 1px;
+}
+
+footer ul li {
+    padding-bottom: 10px;
+    font-size: 0.8rem;
+}
+
+a {
+    font-size: 0.8rem;
+}
+
+footer .smallriga {
+    width: 100px;
+}
+
+footer p {
+    font-size: 0.7rem;
+    color: gray;
+    padding-bottom: 20px;
+}
+
+.container.small.nomargin {
+    margin-bottom: 40px;
+
+}
+
+#colspeciale {
+    padding: 0;
+}
+
+footer ul {
+    padding-bottom: 40px;
+}
